@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="orderHistoryPane" maxHeight="800.0" maxWidth="700.0" minHeight="800.0" minWidth="700.0" prefHeight="800.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OrderHistoryController">
+   <children>
+      <Label fx:id="headerLabel" alignment="CENTER" layoutX="16.0" layoutY="14.0" prefHeight="80.0" prefWidth="669.0" text="Thneed Inc.">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <ListView fx:id="unfilledOrderListView" layoutX="16.0" layoutY="121.0" onMouseClicked="#unfilledSelect" prefHeight="261.0" prefWidth="669.0" />
+      <Button fx:id="viewCustomerButton" layoutX="22.0" layoutY="724.0" mnemonicParsing="false" onAction="#viewCustomerButtonClick" prefHeight="52.0" prefWidth="145.0" text="View Customer">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="placeNewOrderButton" layoutX="501.0" layoutY="724.0" mnemonicParsing="false" onAction="#placeNewOrderButtonClick" prefHeight="52.0" prefWidth="163.0" text="Place New Order">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ListView fx:id="filledOrderListView" layoutX="16.0" layoutY="427.0" onMouseClicked="#filledSelect" prefHeight="289.0" prefWidth="669.0" />
+      <Label fx:id="unfilledOrdersLabel" layoutX="22.0" layoutY="83.0" prefHeight="28.0" prefWidth="133.0" text="Unfilled Orders: " underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="filledOrdersLabel" layoutX="22.0" layoutY="389.0" prefHeight="28.0" prefWidth="124.0" text="Filled Orders:" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="fillSelectedOrderButton" layoutX="190.0" layoutY="724.0" mnemonicParsing="false" onAction="#fillSelectedOrderButtonClick" prefHeight="52.0" prefWidth="133.0" text="Fill Order">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveOrdersButton" layoutX="351.0" layoutY="724.0" mnemonicParsing="false" onAction="#saveOrdersButtonClick" prefHeight="52.0" prefWidth="133.0" text="Save Orders">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="formatLabelUnfilledOrders" layoutX="173.0" layoutY="87.0" prefHeight="20.0" prefWidth="490.0" text="Format: [Order ID, Quantity, Size, Color, CustomerID, Type, Date, Order Status]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="formatLabelFilledOrders" layoutX="146.0" layoutY="393.0" prefHeight="20.0" prefWidth="490.0" text="Format: [Order ID, Quantity, Size, Color, CustomerID, Type, Date, Order Status]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

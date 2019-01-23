@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="orderPagePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="156.0" layoutY="27.0" text="Thneed Inventory">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="228.0" layoutY="79.0" text="Color: " />
+            <RadioButton fx:id="pink" layoutX="229.0" layoutY="104.0" mnemonicParsing="false" text="Pink" textFill="#dd0587">
+               <toggleGroup>
+                  <ToggleGroup fx:id="color" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="black" layoutX="226.0" layoutY="138.0" mnemonicParsing="false" text="Black" toggleGroup="$color" />
+            <RadioButton fx:id="grey" layoutX="228.0" layoutY="121.0" mnemonicParsing="false" text="Gray" textFill="#a4a0a0" toggleGroup="$color" />
+            <RadioButton fx:id="blue" layoutX="229.0" layoutY="155.0" mnemonicParsing="false" text="Blue" textFill="#0d06f2" toggleGroup="$color" />
+            <Label layoutX="386.0" layoutY="79.0" prefHeight="17.0" prefWidth="35.0" text="Size:" />
+            <Button fx:id="clearButton" layoutX="90.0" layoutY="324.0" mnemonicParsing="false" onAction="#clearButtonClicked" text="Clear" />
+            <Button fx:id="addButton" layoutX="190.0" layoutY="323.0" mnemonicParsing="false" onAction="#addButtonClicked" prefHeight="27.0" prefWidth="153.0" text="Display Current Inventory" />
+            <ComboBox fx:id="sizeComboBox" layoutX="371.0" layoutY="124.0" prefHeight="27.0" prefWidth="144.0" promptText="Select the Size" />
+            <Label layoutX="77.0" layoutY="216.0" prefHeight="17.0" prefWidth="35.0" text="Pink" />
+            <Label layoutX="77.0" layoutY="192.0" text="Current Inventory">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="242.0" text="Incoming Inventory">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="124.0" layoutY="216.0" text="S" />
+            <Label layoutX="149.0" layoutY="216.0" text="15" />
+            <TextField layoutX="124.0" layoutY="268.0" prefHeight="25.0" prefWidth="49.0" />
+            <TextField layoutX="300.0" layoutY="268.0" prefHeight="25.0" prefWidth="59.0" />
+            <Label layoutX="81.0" layoutY="272.0" text="Date:" />
+            <Label layoutX="238.0" layoutY="272.0" text="Quantity:" />
+            <Button layoutX="393.0" layoutY="324.0" mnemonicParsing="false" text="Update Incoming Inventory" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

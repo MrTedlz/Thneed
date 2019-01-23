@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="197.0" layoutY="32.0" prefHeight="35.0" prefWidth="206.0" text="Inventory Report">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="110.0" text="How quickly orders are filled" />
+      <Label layoutX="77.0" layoutY="152.0" text="Most Popular Item" />
+      <Label layoutX="77.0" layoutY="192.0" text="Least Popular Item" />
+      <Label layoutX="77.0" layoutY="244.0" prefHeight="17.0" prefWidth="36.0" text="Items Back" />
+      <Label layoutX="362.0" layoutY="110.0" text="Date ord" />
+   </children>
+</AnchorPane>

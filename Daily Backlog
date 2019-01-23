@@ -1,0 +1,36 @@
+10/24/17 Documentation:
+
+Built Login, Register page, & Welcome page GUIs - Chris
+Built Login Page & Register Initial Controllers - Chris
+Built Order History GUI, Order Class, & Order Text File - Alaric
+Built Order Page GUI, Initial Controller, & linked Login Controller to Order Page - Luke
+
+
+10/26/17 Documentation:
+
+Login page completed
+Remodeled GUIs & Controllers to fit the employee use case rather than customer.\
+
+10/31/17 Documentation:
+Reordered navigation of pages to open to view orders first rather than place orders.
+Worked on reading in saved orders, edit GUIs and order Class.
+Changed register GUI to register new customer within the order page GUI.
+
+11/2/17 Documentation:
+Edited OrderPageController to simplifiy methods of getting the thneed information using toggle groups rather than if statements.
+Worked on reading in the unfilled and filled orders.
+
+11/3/17 Documentation:
+Worked on reading in customer orders based off of orders placed.
+Added button to order page GUI and changed menu bar to combo box.
+
+11/7/17 Documentation:
+Orders are now able to be filled.
+Save data button has been added and works.
+Adding an exit window stop method which will write to file. Still a work in progress.
+
+11/9/17 Documentation:
+Filled orders now transition from filled to unfilled at the click of a button.
+Fixed clear button to clear all fields.
+Comments for documentation added to the code.
+Created powerpoint for presentation and lucidchart for architecture diagram.
